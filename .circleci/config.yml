@@ -27,7 +27,7 @@ jobs:
           environment:
             MOCHA_FILE: ./junit/test-results.xml
           when: always
-      - store_tet_results:
-        path: ./junit
+      - store_test_results:
+          path: ./junit
       - store_artifacts:
-        path: ./junit
+          path: ./junit
